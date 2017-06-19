@@ -8,55 +8,55 @@ class KnownValues(unittest.TestCase):
 
     def test_automatedAlarmForWednesdayOff(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Wednesday", True)
+        result = automatedAlarm.automatedAlarm("wednesday", True)
         # Check for expected output
         self.assertEqual('8:30', result)
 
     def test_automatedAlarmForMondayOff(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Monday", True)
+        result = automatedAlarm.automatedAlarm("monday", True)
         # Check for expected output
         self.assertEqual('9:30', result)
 
     def test_automatedAlarmForMondaySchool(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Monday", False)
+        result = automatedAlarm.automatedAlarm("monday", False)
         # Check for expected output
         self.assertEqual('7:00', result)
 
     def test_automatedAlarmForWednesdaySchool(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Wednesday", False)
+        result = automatedAlarm.automatedAlarm("wednesday", False)
         # Check for expected output
         self.assertEqual('7:30', result)
 
     def test_automatedAlarmForSaturdayOff(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Saturday", True)
+        result = automatedAlarm.automatedAlarm("saturday", True)
         # Check for expected output
         self.assertEqual('9:00', result)
 
     def test_automatedAlarmForSaturdaySchool(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Saturday", False)
+        result = automatedAlarm.automatedAlarm("saturday", False)
         # Check for expected output
         self.assertEqual('9:00', result)
 
     def test_automatedAlarmForFridaySchool(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Friday", False)
+        result = automatedAlarm.automatedAlarm("friday", False)
         # Check for expected output
         self.assertEqual('7:00', result)
 
     def test_automatedAlarmForThursdaySchool(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Thursday", False)
+        result = automatedAlarm.automatedAlarm("thursday", False)
         # Check for expected output
         self.assertEqual('7:00', result)
 
     def test_automatedAlarmForThursdayOff(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Thursday", True)
+        result = automatedAlarm.automatedAlarm("thursday", True)
         # Check for expected output
         self.assertEqual('8:30', result)
 
